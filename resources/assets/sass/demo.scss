@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+body {
+  background: oldlace;
+
+  font-family: sans-serif;
+
+}
+
+@import '../../../node_modules/flexform-sass/src/flexform';
+
+//@include set-flexform-group-margin(0 0 rhythm() 0);
+//@include set-flexform-inline-breakpoint($screen-m);
+//@include set-flexform-inline-label-width(rhythm(16));
+//@include set-flexform-label-padding(rhythm() 0);
+//@include set-flexform-max-field-size(rhythm(60));
+//@include set-flexform-field-sizes((medium: rhythm(30), small: rhythm(12)));
+@include set-flexform-css-prefix(form);
+@include set-flexform-textarea-height(5rem);
+//@include set-flexform-textarea-padding(rhythm(1.1) rhythm());
+//
+//
+//$input-properties: (
+//        background-color: $color__white,
+//        border: 1px solid $form-control__border-color,
+//        border-radius: $border-radius,
+//        height: $form-control__height,
+//        padding: 0 rhythm(),
+//        focus: (
+//                border: 1px solid darken($form-control__border-color, 10),
+//                box-shadow: 0 0 5px rgba($color__primary, .4)
+//        )
+//);
+
+//@include set-flexform-input-properties($input-properties);
+
+@import "../../../node_modules/flexform-sass/src/components/generated";
